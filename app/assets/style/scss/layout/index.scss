@@ -1,0 +1,123 @@
+
+body{
+
+    font-family: $default-font;
+
+    .subpage{
+        background-image: url('https://hello.raklet.com/images/home/raklet_appstore.png');
+    }
+
+}
+
+
+@media(max-width: 1024px){
+
+    body{
+
+        .subpage{
+            background-image: none !important;
+        }
+
+    }
+
+}
+
+@media(max-width: 768px){
+
+    body{
+
+        .nav-links{
+            background: rgb(255, 255, 255);
+            transition: 0.5s;
+            box-shadow: 0 0 6px 5px #d0cece;
+            left: -100%;
+            ul{
+                height: 100%;
+                padding: 20px;
+
+                li:nth-child(1),
+                li:nth-child(2){
+                    float: left;
+                    width: 50%;
+                    clear: none;
+                    a{
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+
+                li:nth-child(1){
+                    padding-right: 10px;
+                   a{
+                       background-color: #1c6ed4;
+                   }
+                }
+
+                li{
+                    clear: both;
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    a{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+
+        #navLinksCheck:checked ~ .nav-links{
+            left: 0;
+            transition: 0.5s;
+            width: 60%;
+        }
+    
+        .close-menu{
+            background: #00000047;
+        }
+
+        #navLinksCheck:checked ~ .close-menu{
+            width: 100%;
+        }
+
+    }
+
+}
+
+@media(max-width: 425px){
+
+    body{
+
+        .nav-links{
+           
+            ul{
+                height: 100%;
+                padding: 20px;
+
+                li:nth-child(1),
+                li:nth-child(2){
+                    float: none;
+                    width: 100%;
+                    padding: 0;
+                    clear: none;
+                    a{
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+
+                li:nth-child(1){
+                    a{
+                        color:#FFF;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+}

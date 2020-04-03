@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raklet - E-commerce</title>
+
+    <link rel="stylesheet" href="./assets/style/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="container items-center mx-auto flex justify-between lg:pt-5 lg:pr-6 md:pt-5 md:pr-6 sm:pt-5 sm:pr-0">
+            
+            <div class="flex items-center min-w-full">
+
+                <div class="xl:w-1/6 lg:w-1/6 md:w-2/6 sm:w-3/6">
+                    <a href="" title="Raklet - Home Page">
+                        <img class="xl:h-8 lg:h-8 md:h-10 sm:h-10 mx-auto" src="https://hello.raklet.com/images/_shared/logo/color/black/64.png" alt="Raklet - Home Page">
+                    </a>
+                </div>
+
+                <input type="checkbox" name="navlink" class="nav-links-check w-0" id="navLinksCheck" />
+
+                <label for="navLinksCheck" class="w-0 xl:hidden lg:hidden md:block md:fixed md:inset-0 sm:block sm:fixed sm:inset-0 h-full close-menu"></label>
+
+                <div class="xl:hidden lg:hidden md:block md:w-4/6 sm:w-4/6 pr-4 sm:pr-0">
+                    <label type="button" for="navLinksCheck" class="block text-gray-500 border border-gray-300 focus:outline-none float-right p-1 rounded hamburger-bars">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path class="hidden" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </label>    
+                </div>
+
+                <div class="xl:w-3/6 xl:relative lg:w-3/6 xl:block lg:block lg:relative md:fixed md:h-full md:bottom-0 md:w-0 sm:fixed sm:h-full sm:bottom-0 sm:w-0 nav-links">
+                    <ul class="xl:flex xl:items-center lg:flex lg:items-center md:block">
+                        <li class="xl:hidden lg:hidden">
+                            <a href="#" class="py-2 px-4 font-hairline md:rounded md:text-white">
+                                Oturum Aç
+                            </a>
+                        </li>
+                        <li class="xl:hidden lg:hidden">
+                            <a href="#" class="transition duration-300 ease-in-out py-2 px-4 font-hairline bg-raklet-yellow rounded hover:bg-raklet-yellow-dark">
+                                Başla
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 font-hairline">
+                                Özellikler
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 font-hairline">
+                                Referanslar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 font-hairline">
+                                Fiyatlandırma
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 font-hairline">
+                                Ürünlerimiz
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="xl:w-2/6 lg:w-2/6 xl:block lg:block md:hidden sm:hidden">
+                    
+                    <ul class="flex items-center justify-end">
+                        <li>
+                            <a href="#" class="py-2 px-4 font-hairline">
+                                Oturum Aç
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="transition duration-300 ease-in-out py-2 px-4 font-hairline bg-raklet-yellow rounded hover:bg-raklet-yellow-dark">
+                                Başla
+                            </a>
+                        </li>
+                    </ul>
+ 
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="subpage xl:p-0 lg:p-0 md:p-0 sm:px-6 xl:bg-right-bottom xl:bg-no-repeat lg:py-20 xl:py-48 md:py-20 sm:py-16 bg-contain">
+        
+        <div class="container mx-auto lg:pl-20 sm:p-0">
+
+            <div class="lg:w-full lg:text-center lg:w-full xl:w-1/2 xl:inline-block xl:text-left md:text-center sm:text-center">
+
+                <h1 class="xl:text-5xl xl:text-5xl md:text-4xl sm:text-3xl font-bold tracking-tighter text-gray-800">
+                    Tak ve Çalıştır Çözümleri
+                </h1>
+                <div class="xl:text-xl lg:text-xl md:text-lg font-hairline block pl-2 pr-32 sm:p-0">
+                    Yönetmenin yeni ve daha iyi bir yolu contacts, messages and payments.
+                </div>
+
+                <div class="xl:flex xl:items-left xl:justify-start lg:flex lg:mt-12 lg:items-center lg:justify-center md:flex md:mt-12 md:items-center md:justify-center sm:block subpage-buttons">
+
+                    <a href="#" class="transition duration-300 ease-in-out bg-raklet-yellow block rounded py-4 px-10 hover:bg-raklet-yellow-dark xl:float-left lg:float-left md:float-left sm:float-none xl:my-0 lg:my-0 md:my-0 sm:my-5 text-lg">
+                        Ücretsiz olarak başla
+                    </a>
+                    <a href="#" class="transition duration-300 ease-in-out block float-left border border-raklet-blue rounded py-4 px-16 hover:bg-raklet-blue xl:float-left lg:float-left md:float-left xl:ml-3 lg:ml-3 md:ml-3 sm:float-none sm:m-0 text-lg">
+                        Demo Al
+                    </a>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+    </section>
+
+    <section class="product bg-raklet-light-grey py-16">
+
+        <div class="container mx-auto">
+
+            <h1 class="text-center text-3xl font-semibold text-gray-900">
+                Ürünlerimizle Tanışın
+            </h1>
+            <div class="text-center">
+                İhtiyacınız olan tüm araçlara erişin, etkileşimde bulunun ve büyüyün.
+            </div>
+
+            <div id="app">
+
+                <div class="mt-10 overflow-auto">
+
+                    <div v-for="prod in products" :key="prod.id" class="float-left product-box xl:w-1/4 lg:w-1/4 md:w-2/4 sm:w-full p-2">
+
+                        <div class="bg-white transition duration-150 ease-in-out rounded border border-gray-200 hover:shadow">
+
+                            <a :href="prod.slug" :title="prod.name">
+
+                                <div class="border-b border-gray-200 product-box__image">
+                                    <img :src="prod.images" class="w-56 mx-auto" />
+                                </div>
+
+                                <div class="product-box__desc-wrapper p-5">
+
+                                    <div class="product-box__desc-wrapper-name text-xs text-gray-800 h-10">
+                                        <span class="font-bold">{{prod.brand.name}}</span> {{ prod.name }}
+                                    </div>
+
+                                    <div class="product-box__desc-wrapper-price flex mt-2 items-center">
+
+                                        <div class="orjinal-price line-through mr-2 text-gray-800 text-sm" v-if="prod.price.originalPrice !== 0">
+                                            {{ formatPrice(prod.price.originalPrice) }} TL
+                                        </div>
+
+                                        <div class="selling-price text-raklet-blue font-semibold text-base">
+                                            {{ formatPrice(prod.price.sellingPrice) }} TL
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="all-product text-center mt-10">
+                
+                <a href="#" class="transition duration-300 ease-in-out py-2 px-16 font-hairline bg-raklet-yellow rounded hover:bg-raklet-yellow-dark">
+                    tüm ürünleri görüntüle
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const API_URL = "http://localhost:3000/products";
+        
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                products: []
+            },
+            mounted(){
+                
+                axios.get(API_URL).then(obj => {
+                    
+                    this.products = obj.data;
+
+                })
+
+            },
+            methods: {
+                formatPrice(value) {
+                    let val = (value/1).toFixed(2).replace('.', ',')
+                    return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+                }
+            }
+        });
+
+        // let hamburgerBars = document.getElementsByClassName('hamburger-bars');
+        // let navLinks = document.getElementsByClassName('nav-links');
+
+        // hamburgerBars[0].addEventListener("click", () => {
+        //     (navLinks[0].style.display === "block") ? navLinks[0].style.display = "none" : navLinks[0].style.display = "block";
+        // });
+
+    </script>
+
+</body>
+
+</html>

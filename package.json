@@ -1,0 +1,21 @@
+{
+  "name": "raklet-ecommerce",
+  "version": "1.0.0",
+  "description": "Raklet interview project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "tailwindcss": "^1.2.0"
+  }
+}
