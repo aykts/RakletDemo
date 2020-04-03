@@ -12,7 +12,7 @@ gulp.task('css', function () {
       require('tailwindcss'),
       require('autoprefixer'),
     ]))
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./app/assets/style/css'));
 })
 
