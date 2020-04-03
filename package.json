@@ -2,9 +2,9 @@
   "name": "raklet-ecommerce",
   "version": "1.0.0",
   "description": "Raklet interview project",
-  "main": "index.js",
+  "main": "app/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "json-server --watch db.json"
   },
   "author": "",
   "license": "ISC",
